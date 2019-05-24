@@ -1,0 +1,23 @@
+﻿<Window x:Class="EarthQuakesExamWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EarthQuakesExamWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="298*"/>
+            <RowDefinition Height="121*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="dataGrid" HorizontalAlignment="Left" Grid.Row="0" Width="792" Height="298" VerticalAlignment="Top">
+
+        </DataGrid>
+
+        <TextBlock Text="Сколько землитресений вы хотите видеть?" Margin="76,21,469,79" Grid.Row="1"/>
+        <TextBox Name="textBox" HorizontalAlignment="Left" Height="23" Margin="105,47,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Button Content="Получить" Click="Button_Click" HorizontalAlignment="Left" Margin="535,47,0,0" VerticalAlignment="Top" Width="121" Height="23" Grid.Row="1"/>
+
+    </Grid>
+</Window>
